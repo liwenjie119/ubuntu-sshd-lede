@@ -12,7 +12,7 @@ echo 'export DISPLAY=:0' >> /etc/profile
 sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
 sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 mkdir /root/.ssh
-mkdir /123/.ssh
+mkdir /home/123/.ssh
 
 #lede
 apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
