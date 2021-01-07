@@ -1,6 +1,6 @@
 apt-get update&&apt upgrade -y
 #sshd
-apt-get install -yqq sudo ssh net-tools vim language-pack-zh-hans bash-completion fonts-wqy-microhei
+apt-get install -yqq sudo ssh net-tools vim screen language-pack-zh-hans bash-completion fonts-wqy-microhei
 mkdir /var/run/sshd
 echo 'export LC_ALL=zh_CN.UTF-8' >> /etc/profile
 echo 'root:root' |chpasswd
