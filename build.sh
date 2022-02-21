@@ -15,7 +15,7 @@ mkdir /root/.ssh
 mkdir /home/123/.ssh
 
 #lede
-apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-1804)
+apt-get -qq install $(curl -fsSL git.io/depends-ubuntu-2004)
 
 #clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
