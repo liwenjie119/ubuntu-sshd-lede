@@ -1,4 +1,4 @@
-FROM       ubuntu:latest
+FROM       ubuntu:noble
 MAINTAINER liwenjie119 "https://github.com/liwenjie119/ubuntu-sshd-lede"
 
 ENV FORCE_UNSAFE_CONFIGURE=1 \
