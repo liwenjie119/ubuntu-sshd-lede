@@ -5,8 +5,8 @@ mkdir /var/run/sshd
 echo 'export LC_ALL=zh_CN.UTF-8' >> /etc/profile
 echo 'root:root' |chpasswd
 useradd --create-home --no-log-init --shell /bin/bash user
-adduser user sudo
-echo 'user:user' | chpasswd
+adduser ubuntu sudo
+echo 'ubuntu:user' | chpasswd
 echo 'user ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 echo 'export DISPLAY=:0' >> /etc/profile
 sed -ri 's/^#?PermitRootLogin\s+.*/PermitRootLogin yes/' /etc/ssh/sshd_config
