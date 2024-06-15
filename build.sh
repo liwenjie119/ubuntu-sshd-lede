@@ -31,5 +31,6 @@ python3-pyelftools python3-setuptools qemu-utils rsync scons squashfs-tools subv
 uglifyjs upx-ucl unzip vim wget xmlto xxd zlib1g-dev
 
 #clean
+apt autoremove -qqy&&apt clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc
