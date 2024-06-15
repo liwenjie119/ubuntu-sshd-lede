@@ -11,6 +11,6 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
 
 EXPOSE 22
 
-WORKDIR /home/user
+WORKDIR /home/ubuntu
 
 ENTRYPOINT  ["/usr/sbin/sshd", "-D"]
